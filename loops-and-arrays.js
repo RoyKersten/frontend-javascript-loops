@@ -6,6 +6,18 @@
 
 const names = ["Henk", "Piet", "Fred", "Joop"];
 
+console.log("originele waardes:");
+for (let i = 0; i < names.length; i++) {
+    console.log(names[i]);
+}
+
+console.log("aangepaste waardes:");
+for (let i = 0; i < names.length; i++) {
+    const nickName = names[i];
+    names[i] = nickName + "je";
+    console.log(names[i]);
+}
+
 // Verwachtte uitkomsten:
 // Vóór het script zie je de originele waardes:
 // console.log(names) geeft: ["Henk", "Piet", "Fred", "Joop"]
@@ -20,6 +32,18 @@ const names = ["Henk", "Piet", "Fred", "Joop"];
 // ==========================================
 
 const numbers = [2, 4, 5, 29, 38];
+
+console.log("originele waardes:");
+for (let i = 0; i < numbers.length; i++) {
+    console.log(numbers[i]);
+}
+
+console.log("aangepaste waardes:");
+for (let i = 0; i < numbers.length; i++) {
+    const initialNumber = numbers[i];
+    numbers[i] = initialNumber * 3;
+    console.log(numbers[i]);
+}
 
 // Verwachtte uitkomsten:
 // Vóór het script zie je de originele waardes:
@@ -36,6 +60,19 @@ const numbers = [2, 4, 5, 29, 38];
 // ==========================================
 
 const squares = [30, 2, 8, 24, 11];
+
+console.log("originele waardes:");
+for (let i = 0; i < squares.length; i++) {
+    console.log(squares[i]);
+}
+
+console.log("aangepaste waardes:");
+for (let i = 0; i < squares.length; i++) {
+    const initialSquare = squares[i];
+    squares[i] = initialSquare * initialSquare * initialSquare;
+    console.log(squares[i]);
+}
+
 
 // Verwachtte uitkomsten:
 // Vóór het script zie je de originele waardes:
